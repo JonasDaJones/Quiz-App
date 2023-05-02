@@ -10,21 +10,11 @@ body {
 }
 
 header {
-  background-color: white;
-  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.674);
   min-height: fit-content;
   width: 100vw;
   position: fixed;
   top: 0;
-}
-
-footer {
-  background-color: white;
-  width: 100vw;
-  height: fit-content;
-  padding: 5px;
-  position: fixed;
-  bottom: 0;
 }
 
 h1 {
@@ -37,14 +27,25 @@ h1 {
 }
 .card {
   background-color: white;
-  width: 70%;
+  width: 80%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 20px 5px 10px 5px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  position: relative;
+}
+
+.card-bookmark {
+  color: black;
+  font-weight: bold;
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: -4px;
+  right: -5px;
 }
 
 .question {
@@ -53,27 +54,49 @@ h1 {
   padding: 2px;
 }
 
-.answer-button {
+.question-button {
   width: fit-content;
-  padding: 5px;
-  margin: 30px auto;
+  padding: 5px 7px;
+  margin: 1.5em auto 2em;
   background-color: lightgrey;
   border: 2px solid black;
   border-radius: 15px;
 }
+
+.answer-button {
+  display: none;
+  width: fit-content;
+  padding: 5px 7px;
+  margin: 10px auto;
+  background-color: lightgrey;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
 .tag-list {
+  margin-top: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
 }
 
-tag {
+.tag-list tag {
   background-color: red;
+  font-size: 0.8em;
   color: white;
   border-radius: 3px;
   width: fit-content;
   padding: 2px;
   margin: 2px;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.674);
+  width: 100vw;
+  height: 8%;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
 }
 
 footer ul {
@@ -82,7 +105,10 @@ footer ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
-footer li {
+footer svg {
+  color: black;
+  font-size: 32px;
 }
