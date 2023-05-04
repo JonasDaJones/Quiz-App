@@ -24,7 +24,7 @@ h1 {
   text-align: center;
 }
 
-.question-card-container {
+.question-card__container {
   margin-top: 15%;
   overflow: auto;
 }
@@ -43,16 +43,20 @@ h1 {
   position: relative;
 }
 
-.card-bookmark {
-  color: lightgrey;
-  font-size: 30px;
-  font-weight: bold;
+.question-card__bookmark {
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  color: lightgreen;
+  border: none;
+  padding: 0;
+  font-size: 20px;
   position: absolute;
   top: -4px;
   right: -5px;
 }
 
-.card-bookmark-marked {
+.question-card__bookmark--marked {
   color: black;
 }
 
@@ -62,9 +66,7 @@ h1 {
   padding: 2px;
 }
 
-.answer1,
-.answer2,
-.answer3 {
+.answer {
   visibility: hidden;
   text-align: center;
 }
